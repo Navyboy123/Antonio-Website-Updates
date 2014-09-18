@@ -14,10 +14,28 @@ and open the template in the editor.
         <link type="text/css" rel="stylesheet" href="css/Custom-style.css">
     </head>
     <body>
-        <div class="container"></div>
-        <p>container</p>
-        <div class="row">
-            <p>Row</p>
+        <div class="container">
+            <p>container</p>
+            <div class="row">
+                    <p>Row</p>
+                <div class="col-xs-10">
+                        <p>col-xs-10</p>
+                    <div class="row">
+                            <p>row</p>
+                        <div class="col-xs-3"></div>
+                        <div class="col-xs-9"></div>
+                    </div>
+                    <!--"col" shows the placement for the coloumbs-->
+                    <div class="row">
+                            <p>row</p>
+                        <div class="col-xs-3"></div>
+                        <div class="col-xs-9"></div>
+                    </div>
+                </div>    
+                <div class="col-xs-2">
+                        <p>col xs 2</p>
+                </div>
+            </div>
         </div>
     </body>
 </html>

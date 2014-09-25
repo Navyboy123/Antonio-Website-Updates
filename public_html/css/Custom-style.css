@@ -3,16 +3,14 @@ body {
 }
 
 body{
-    
+
 }
-    #tech{
-        text-align: center;      
-    }
-    
-    #dropdownMenu1 {
-        text-align: right;
-    }
-    
-    
-   
-    
+
+#dropdownMenu1{
+   float: top;
+}
+
+#screenshot{
+    width: 30%;
+    float: right; 
+ }

@@ -6,27 +6,28 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>My Website!!</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
         <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
-        <link type="text/css" rel="stylesheet" href="css/Custom-style.css">
+       <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <link type="text/css" rel="stylesheet" href="css/Custom-style.css">
     </head>
 <body>
     <div class="jumbotron">
-  <h1>WELCOME TO MY PAGE!</h1>
+        <h1>WELCOME TO MY PAGE!</h1>
   <p>...</p>
 </div>
     <div class="container" id="index">
          <p> </p>
         <div class="row">
-            <h1>ABOUT ME</h1>
+            <h1 id="ID">ABOUT ME</h1>
             <p> My Name is Antoino Obedicen I am a Seinor at Pasadena High school.<br>
             I am currently taking a computer science class that helps me in understanding computers better. </p>
         <div class="col-xs-10">
-            <h2>HOBBIES</h2>
-            <p>My hobbies are skating playing video games and airsoft.</p>   
+            <h2 id="hobbies">HOBBIES</h2>
+            <p id="replaceWText">My hobbies are skating playing video games and airsoft.</p>   
             <div class="row">
                 <h3>MY PLANS</h3>
              <p> I plan to join the US navy and hopefully work for google some time in the future. </p>
@@ -45,13 +46,23 @@ and open the template in the editor.
             </div>
         </div>    
         <div class="col-xs-2">
-            <nav class="list-group">
-            <a class="list-group-item-danger" href="index.html">About Me</a>
-            <a class="list-group-item" href="Technologies page.html"> Technologies</a>
-            <a class="list-group-item" href="projects.html ANtonio.html">Projects Page</a>
-            </nav>
+             <div class="dropdown" >
+        <!--be sure to secure all button layouts--> 
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+    Other Pages
+    <span class="caret"></span>
+    </button>
+       <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">About Me</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="Technologies page.html">Technologies</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="projects.html ANtonio.html">Projects</a></li>
+        <li role="presentation" class="divider"></li>
+       </ul>
+    </div>
         </div>
         </div>
     </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
